@@ -4,6 +4,8 @@ output:
   html_document:
     keep_md: true
 ---
+## Loading and preprocessing the data
+```{r}
 install.packages("AppliedPredictiveModeling")
 install.packages("lattice")
 install.packages("lubridate")
@@ -19,10 +21,7 @@ data$interval <- factor(data$interval)
 NA_index <- is.na(as.character(data$steps))
 data_no_NA <- data[!NA_index,]
 head(data_no_NA)
-
-## Loading and preprocessing the data
-
-
+```
 
 ## What is mean total number of steps taken per day?
 
