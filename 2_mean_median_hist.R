@@ -1,5 +1,0 @@
-steps_each_day <- aggregate(steps ~ date, data = data_no_NA, sum)
-colnames(steps_each_day) <- c("date", "steps")
-hist(as.numeric(steps), breaks = 20, col = "red", xlab = "Number of Steps", main = "Histogram of the total number of steps taken each day")
-mean(steps_each_day_complete$steps)
-median(steps_each_day_complete$steps)
